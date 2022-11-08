@@ -40,7 +40,6 @@ INSTALLED_APPS = [
     'django.contrib.staticfiles',
     'rest_framework',
     'rest_framework_simplejwt',
-    'authn',
 ]
 
 MIDDLEWARE = [
@@ -53,7 +52,7 @@ MIDDLEWARE = [
     'django.middleware.clickjacking.XFrameOptionsMiddleware',
 ]
 
-ROOT_URLCONF = 'SpotifyProject.urls'
+ROOT_URLCONF = 'controller.urls'
 
 TEMPLATES = [
     {
@@ -71,7 +70,7 @@ TEMPLATES = [
     },
 ]
 
-WSGI_APPLICATION = 'SpotifyProject.wsgi.application'
+WSGI_APPLICATION = 'controller.wsgi.application'
 
 
 # Database

@@ -1,0 +1,1 @@
+SECRET_API = "my_secret"

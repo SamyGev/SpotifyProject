@@ -80,6 +80,7 @@ Fournir une conf permettant l'utilisation d'un reverse proxy
 13. Tests unitaires et d'integration
 
 ## Environement
+.\venv\Scripts\activate pour activer le venv ***en integ**
 
 ## Déploiement
 
