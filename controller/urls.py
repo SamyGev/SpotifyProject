@@ -14,8 +14,28 @@ Including another URLconf
     2. Add a URL to urlpatterns:  path('blog/', include('blog.urls'))
 """
 from django.contrib import admin
-from django.urls import path
+from django.urls import path, include
+
+from drf_yasg import openapi
+from drf_yasg.views import get_schema_view as schema
+
+schema_view = schema(
+    openapi.Info(
+        title="API Description",
+        default_version="1.0",
+        description="Description de l'API DjangoTify et des endpoints exposés",
+    ),
+    public=True,
+)
 
 urlpatterns = [
     path('admin/', admin.site.urls),
+    path('inscription/', include('inscription.urls')),
+    path('connection/', include('connection.urls')),
+    path('groups/', include('groups.urls')),
+    path('link/', include('link.urls')),
+    path('personnality/', include('personnality.urls')),
+    path('playlist/', include('playlist.urls')),
+    path('synchronization/', include('synchronization.urls')),
+    path('swagger/', schema_view.with_ui('swagger', cache_timeout=0), name="swagger-schema"),
 ]

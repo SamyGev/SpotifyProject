@@ -63,6 +63,7 @@ Fournir une conf permettant l'utilisation d'un reverse proxy
 [https://www.django-rest-framework.org/](#)  
 [https://www.https://swagger.io/.com/](#)  
 [https://www.developer.spotify.com/](#)  
+[https://docs.docker.com/](#)  
 
 ## BackLog
 1. Inscription
@@ -80,8 +81,19 @@ Fournir une conf permettant l'utilisation d'un reverse proxy
 13. Tests unitaires et d'integration
 
 ## Environement
-.\venv\Scripts\activate pour activer le venv ***en integ**
+.\venv\Scripts\activate pour activer le venv **en integ**
+Dépendances dans le **requirements.txt**
 
 ## Déploiement
+### Docker
+### systemd
 
 # Endpoint
+## SwaggerUI
+
+
+# Notes au 15/11
+* Faire la connection à l'api spotify
+* Modifier le User pour implémenter la liaison (username du compte spotify, token à sauvegarder hashé)
+* Créer les groupes
+* Modifier le swagger 
