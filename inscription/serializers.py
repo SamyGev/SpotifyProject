@@ -21,8 +21,3 @@ class RegisterSerializer(serializers.ModelSerializer):
             )
         user.set_password(validated_data['password'])
         return user
-
-{
-    "username": "toto4",
-    "password": "toto4"
-}

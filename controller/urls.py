@@ -15,7 +15,7 @@ Including another URLconf
 """
 from django.contrib import admin
 from django.urls import path, include
-
+from . import views
 from drf_yasg import openapi
 from drf_yasg.views import get_schema_view as schema
 
@@ -30,6 +30,8 @@ schema_view = schema(
 
 urlpatterns = [
     path('admin/', admin.site.urls),
+    path('callback/', views.callback, name='callback'),
+    path('home/', views.home, name="home"),
     path('inscription/', include('inscription.urls')),
     path('connection/', include('connection.urls')),
     path('groups/', include('groups.urls')),
